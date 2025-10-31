@@ -1,0 +1,5 @@
+@import "@crest-ui/tokens/css/variables.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

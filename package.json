@@ -7,7 +7,9 @@
     "dev": "turbo run dev --parallel",
     "build": "turbo run build",
     "lint": "turbo run lint --continue",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "docs": "turbo run dev --filter=@crest-ui/docs",
+    "build:docs": "turbo run build --filter=@crest-ui/docs"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
