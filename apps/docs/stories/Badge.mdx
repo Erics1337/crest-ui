@@ -1,0 +1,20 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import * as BadgeStories from "./Badge.stories";
+
+<Meta of={BadgeStories} />
+
+# Badge
+
+Compact status indicators for labeling states and categories.
+
+## Examples
+
+<Canvas>
+  <Story of={BadgeStories.Default} />
+  <Story of={BadgeStories.Variants} />
+</Canvas>
+
+## Guidance
+
+- Use short labels; avoid full sentences.
+- Prefer `neutral` or `outline` for low emphasis; `danger` sparingly.

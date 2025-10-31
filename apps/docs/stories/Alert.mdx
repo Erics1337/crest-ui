@@ -1,0 +1,20 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import * as AlertStories from "./Alert.stories";
+
+<Meta of={AlertStories} />
+
+# Alert
+
+Communicate status and guidance with accessible emphasis.
+
+## Examples
+
+<Canvas>
+  <Story of={AlertStories.Info} />
+  <Story of={AlertStories.Variants} />
+</Canvas>
+
+## Guidance
+
+- Use concise titles and descriptive, actionable body text.
+- Map variants to semantic meaning (info, success, warning, error).

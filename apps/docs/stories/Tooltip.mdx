@@ -1,0 +1,20 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import * as TooltipStories from "./Tooltip.stories";
+
+<Meta of={TooltipStories} />
+
+# Tooltip
+
+Subtle, accessible hover/focus hints with calm motion and high contrast.
+
+## Examples
+
+<Canvas>
+  <Story of={TooltipStories.Basic} />
+</Canvas>
+
+## Guidance
+
+- Show short, helpful hints; avoid paragraphs.
+- Support both hover and keyboard focus.
+- Keep motion subtle and responsive.
