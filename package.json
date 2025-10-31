@@ -2,18 +2,31 @@
   "name": "crest-ui",
   "private": true,
   "version": "0.1.0",
-  "workspaces": ["apps/*", "packages/*"],
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "dev": "turbo run dev --parallel",
     "build": "turbo run build",
     "lint": "turbo run lint --continue",
     "format": "prettier --write .",
     "docs": "turbo run dev --filter=@crest-ui/docs",
-    "build:docs": "turbo run build --filter=@crest-ui/docs"
+    "build:docs": "turbo run build --filter=@crest-ui/docs",
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch --parallel",
+    "coverage": "turbo run coverage"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@vitejs/plugin-react": "^5.1.0",
+    "@vitest/coverage-v8": "^4.0.6",
+    "jsdom": "^27.0.1",
     "prettier": "^3.2.5",
     "turbo": "^1.13.4",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vitest": "^4.0.6"
   }
 }
