@@ -1,0 +1,22 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import * as InputStories from "./Input.stories";
+
+<Meta of={InputStories} />
+
+# Input
+
+Text input built with Crest tokens and Tailwind utilities.
+
+## Examples
+
+<Canvas>
+  <Story of={InputStories.Default} />
+  <Story of={InputStories.WithValue} />
+</Canvas>
+
+
+
+## Accessibility
+
+- Provide associated `<label>` elements.
+- Maintain sufficient placeholder contrast and clear focus rings.

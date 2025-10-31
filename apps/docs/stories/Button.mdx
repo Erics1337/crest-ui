@@ -1,0 +1,24 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import * as ButtonStories from "./Button.stories";
+
+<Meta of={ButtonStories} />
+
+# Button
+
+Action button with Crest UI tokens and Tailwind preset.
+
+## Examples
+
+<Canvas>
+  <Story of={ButtonStories.Primary} />
+  <Story of={ButtonStories.Secondary} />
+  <Story of={ButtonStories.Ghost} />
+  <Story of={ButtonStories.Sizes} />
+</Canvas>
+
+
+
+## Accessibility
+
+- Provides clear focus states via ring utilities.
+- Ensure button text is descriptive and color contrast meets WCAG AA.

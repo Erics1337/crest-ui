@@ -18,6 +18,7 @@
     "@storybook/addon-a11y": "^8.2.6",
     "@storybook/addon-essentials": "^8.2.6",
     "@storybook/addon-links": "^8.2.6",
+    "@storybook/blocks": "^8.2.6",
     "@storybook/react": "^8.2.6",
     "@storybook/react-vite": "^8.2.6",
     "storybook": "^8.2.6",
