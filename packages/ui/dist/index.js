@@ -5,3 +5,7 @@ export * from "./tabs";
 export * from "./badge";
 export * from "./alert";
 export * from "./tooltip";
+export * from "./modal";
+export * from "./navbar";
+export * from "./footer";
+export * from "./breadcrumbs";

@@ -1,0 +1,19 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import * as ModalStories from "./Modal.stories";
+
+<Meta of={ModalStories} />
+
+# Modal
+
+Accessible dialog with ESC/overlay close, focus handling, and calm elevation.
+
+## Examples
+
+<Canvas>
+  <Story of={ModalStories.Basic} />
+</Canvas>
+
+## Guidance
+
+- Use for focused tasks and confirmations.
+- Provide clear, actionable buttons and concise body.

@@ -1,0 +1,19 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import * as BreadcrumbsStories from "./Breadcrumbs.stories";
+
+<Meta of={BreadcrumbsStories} />
+
+# Breadcrumbs
+
+Hierarchical navigation trail with clear current item semantics.
+
+## Examples
+
+<Canvas>
+  <Story of={BreadcrumbsStories.Basic} />
+</Canvas>
+
+## Guidance
+
+- Keep labels short; avoid redundant levels.
+- Mark the current page with `aria-current="page"`.

@@ -1,0 +1,11 @@
+import { jsx as _jsx } from "react/jsx-runtime";
+import * as React from "react";
+import { cn } from "./lib/cn";
+export const Breadcrumbs = React.forwardRef(({ className, label = "Breadcrumb", children, ...props }, ref) => (_jsx("nav", { ref: ref, "aria-label": label, className: cn("w-full", className), ...props, children: _jsx("ol", { className: "flex items-center gap-1 text-sm text-peak-950/70", children: children }) })));
+Breadcrumbs.displayName = "Breadcrumbs";
+export const BreadcrumbItem = React.forwardRef(({ className, ...props }, ref) => (_jsx("li", { ref: ref, className: cn("inline-flex items-center gap-1", className), ...props })));
+BreadcrumbItem.displayName = "BreadcrumbItem";
+export const BreadcrumbLink = React.forwardRef(({ className, current, ...props }, ref) => (_jsx("a", { ref: ref, "aria-current": current ? "page" : undefined, className: cn("rounded-md px-1.5 py-1 transition-colors", current ? "text-peak-950" : "hover:bg-sand-200 hover:text-peak-950", className), ...props })));
+BreadcrumbLink.displayName = "BreadcrumbLink";
+export const BreadcrumbSeparator = React.forwardRef(({ className, children = "/", ...props }, ref) => (_jsx("span", { ref: ref, role: "presentation", className: cn("select-none px-1", className), ...props, children: children })));
+BreadcrumbSeparator.displayName = "BreadcrumbSeparator";

@@ -1,0 +1,19 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import * as NavbarStories from "./Navbar.stories";
+
+<Meta of={NavbarStories} />
+
+# Navbar
+
+Sticky, translucent top navigation with optional elevation.
+
+## Examples
+
+<Canvas>
+  <Story of={NavbarStories.Basic} />
+</Canvas>
+
+## Guidance
+
+- Keep primary nav minimal; defer secondary actions to menus.
+- Consider elevation on scroll to reinforce depth.
