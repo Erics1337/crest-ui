@@ -57,7 +57,18 @@ function ModalPortal({ children }) {
     const ctx = React.useContext(ModalContext);
     if (!ctx)
         return null;
-    const overlay = (_jsxs("div", { className: "fixed inset-0 z-50", children: [_jsx("div", { className: "fixed inset-0 bg-peak-950/40 backdrop-blur-sm", "data-testid": "modal-overlay", onClick: () => ctx.setOpen(false) }), _jsx("div", { className: "fixed left-1/2 top-1/2 z-50 w-[min(90vw,480px)] -translate-x-1/2 -translate-y-1/2 rounded-xl border border-sand-200 bg-white p-6 shadow-high", children: _jsx(ModalContentInternal, { children: children }) })] }));
+    const [present, setPresent] = React.useState(ctx.open);
+    React.useEffect(() => {
+        if (ctx.open) {
+            setPresent(true);
+            return;
+        }
+        const t = setTimeout(() => setPresent(false), 200); // match CSS duration
+        return () => clearTimeout(t);
+    }, [ctx.open]);
+    if (!present)
+        return null;
+    const overlay = (_jsxs("div", { className: "fixed inset-0 z-50", children: [_jsx("div", { className: cn("fixed inset-0 bg-peak-950/40 backdrop-blur-sm", "transition-opacity duration-200", ctx.open ? "opacity-100" : "opacity-0"), "data-testid": "modal-overlay", onClick: () => ctx.setOpen(false) }), _jsx("div", { className: cn("fixed left-1/2 top-1/2 z-50 w-[min(90vw,480px)] -translate-x-1/2 -translate-y-1/2", "rounded-xl border border-sand-200 bg-white p-6 shadow-high", "transition duration-200", "data-[state=open]:opacity-100 data-[state=open]:scale-100 data-[state=open]:translate-y-0", "data-[state=closed]:opacity-0 data-[state=closed]:scale-95 data-[state=closed]:-translate-y-2", ctx.open ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-95 -translate-y-2"), "data-state": ctx.open ? "open" : "closed", children: _jsx(ModalContentInternal, { children: children }) })] }));
     return createPortal(overlay, document.body);
 }
 function ModalContentInternal({ children }) {

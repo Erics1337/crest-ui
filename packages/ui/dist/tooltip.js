@@ -50,6 +50,6 @@ export const TooltipContent = React.forwardRef(({ className, side = "top", style
             : side === "left"
                 ? "right-full top-1/2 -translate-y-1/2 mr-2"
                 : "left-full top-1/2 -translate-y-1/2 ml-2";
-    return (_jsx("div", { ref: ref, role: "tooltip", id: id, className: cn("pointer-events-none absolute z-50 whitespace-nowrap rounded-md bg-peak-950 px-2 py-1 text-xs text-white shadow-mid", ctx.open ? "opacity-100 scale-100" : "opacity-0 scale-95", "transition-opacity transition-transform duration-150", position, className), ...props }));
+    return (_jsx("div", { ref: ref, role: "tooltip", id: id, "aria-hidden": ctx.open ? undefined : true, "data-state": ctx.open ? "open" : "closed", className: cn("pointer-events-none absolute z-50 whitespace-nowrap rounded-md bg-peak-950 px-2 py-1 text-xs text-white shadow-mid", ctx.open ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-95 translate-y-1", "transition duration-150 will-change-transform will-change-opacity", position, className), ...props }));
 });
 TooltipContent.displayName = "TooltipContent";
