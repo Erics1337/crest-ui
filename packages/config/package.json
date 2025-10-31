@@ -6,8 +6,11 @@
   "main": "tailwind-preset.js",
   "types": "index.d.ts",
   "exports": {
-    "./tailwind-preset": "./tailwind-preset.js",
+    "./tailwind-preset": {
+      "types": "./tailwind-preset.d.ts",
+      "default": "./tailwind-preset.js"
+    },
     "./tsconfig": "./tsconfig.base.json"
   },
-  "files": ["tailwind-preset.js", "tsconfig.base.json", "index.d.ts"]
+  "files": ["tailwind-preset.js", "tailwind-preset.d.ts", "tsconfig.base.json", "index.d.ts"]
 }
