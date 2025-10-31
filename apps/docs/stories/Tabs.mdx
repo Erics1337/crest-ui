@@ -1,0 +1,20 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import * as TabsStories from "./Tabs.stories";
+
+<Meta of={TabsStories} />
+
+# Tabs
+
+Accessible tabbed navigation with calm, high-contrast states and smooth transitions.
+
+## Examples
+
+<Canvas>
+  <Story of={TabsStories.Basic} />
+</Canvas>
+
+## Guidance
+
+- Keep labels short and scannable.
+- Use `TabsList` for grouping triggers and provide clear selected state.
+- Content panels should be focusable and maintain logical reading order.

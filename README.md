@@ -70,26 +70,9 @@ Usage (Tailwind classes via preset):
 ## 🧩 Components
 The UI package provides accessible, token-aware primitives.
 
-- **Available now**: `Button`, `Input`
-- **Planned**: TextArea, Select, Checkbox, Switch, Badge, Tooltip, Avatar, Card, Modal, Drawer, Tabs, etc.
+- **Available now**: `Button`, `Input`, `Card`, `Tabs`
+- **Planned**: TextArea, Select, Checkbox, Switch, Badge, Tooltip, Avatar, Modal, Drawer, Navbar, Breadcrumbs, Footer
 
-Example:
-```tsx
-import { Button, Input } from "@crest-ui/ui";
-
-export default function Example() {
-  return (
-    <div className="space-y-4">
-      <Input placeholder="Your name" />
-      <div className="flex gap-3">
-        <Button variant="primary">Primary</Button>
-        <Button variant="secondary">Secondary</Button>
-        <Button variant="ghost">Ghost</Button>
-      </div>
-    </div>
-  );
-}
-```
 
 
 ## 🧩 Storybook docs

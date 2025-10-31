@@ -1,0 +1,20 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import * as CardStories from "./Card.stories";
+
+<Meta of={CardStories} />
+
+# Card
+
+A surface container with rounded corners, soft elevation, and spacious rhythm.
+
+## Examples
+
+<Canvas>
+  <Story of={CardStories.Basic} />
+</Canvas>
+
+## Guidance
+
+- Use Card to group related content with clear visual hierarchy.
+- Pair with tokens: `rounded-xl`, `shadow-low`, and calm color accents.
+- Avoid overusing shadows; reserve for primary grouping and focus.
