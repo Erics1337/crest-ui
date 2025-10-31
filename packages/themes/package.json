@@ -1,0 +1,10 @@
+{
+  "name": "@crest-ui/themes",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "files": ["index.ts"],
+  "exports": {
+    ".": "./index.ts"
+  }
+}

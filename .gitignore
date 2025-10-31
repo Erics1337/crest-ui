@@ -1,0 +1,12 @@
+node_modules
+.next
+.turbo
+.dist
+build
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+.DS_Store
+.env
+.env.local
+storybook-static

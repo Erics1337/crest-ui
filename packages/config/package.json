@@ -1,0 +1,12 @@
+{
+  "name": "@crest-ui/config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "tailwind-preset.js",
+  "exports": {
+    "./tailwind-preset": "./tailwind-preset.js",
+    "./tsconfig": "./tsconfig.base.json"
+  },
+  "files": ["tailwind-preset.js", "tsconfig.base.json"]
+}

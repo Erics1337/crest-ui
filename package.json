@@ -1,0 +1,17 @@
+{
+  "name": "crest-ui",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint --continue",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "^1.13.4",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@crest-ui/tokens",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "files": ["css", "tokens.json"],
+  "exports": {
+    "./css/variables.css": "./css/variables.css",
+    "./tokens.json": "./tokens.json"
+  },
+  "scripts": {
+    "build": "echo 'tokens ready'"
+  }
+}
