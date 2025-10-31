@@ -99,6 +99,24 @@ export default function Example() {
 - Author pages in **MDX** when you want narrative + guidelines, or use **Autodocs** for fast prop tables from TS
 
 
+## 🧪 Testing
+- Runner: **Vitest** (jsdom) with **React Testing Library** and **user-event**
+- Location: tests live next to components, e.g. `packages/ui/src/*.test.tsx`
+- Scripts:
+  ```bash
+  # all packages
+  npm run test
+  
+  # UI package only
+  npm run test -w @crest-ui/ui
+  npm run test:watch -w @crest-ui/ui
+  npm run coverage -w @crest-ui/ui
+  ```
+- TypeScript tips:
+- Node versions: Vitest 4 targets Node 20/22/24. If you see engine warnings on other versions, use an LTS version.
+
+
+
 ## 🪶 Visual identity
 - **Iconography**: Geometric, Lucide-inspired
 - **Palette**: Earthy tones (sand, mesa) with sky/sunrise accents
