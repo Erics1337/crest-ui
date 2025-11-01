@@ -1,0 +1,18 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import * as Stories from "./Switch.stories";
+
+<Meta of={Stories} />
+
+# Switch
+
+Toggles a setting on/off.
+
+## Examples
+
+<Canvas>
+  <Story of={Stories.Basic} />
+</Canvas>
+
+## Guidance
+
+- Use for immediate changes. If saving is required, prefer Checkbox.

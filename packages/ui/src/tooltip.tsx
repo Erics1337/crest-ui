@@ -109,7 +109,6 @@ export const TooltipContent = React.forwardRef<HTMLDivElement, TooltipContentPro
         ref={ref}
         role="tooltip"
         id={id}
-        aria-hidden={ctx.open ? undefined : true}
         data-state={ctx.open ? "open" : "closed"}
         className={cn(
           "pointer-events-none absolute z-50 whitespace-nowrap rounded-md bg-peak-950 px-2 py-1 text-xs text-white shadow-mid",

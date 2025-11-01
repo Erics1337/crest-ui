@@ -1,0 +1,18 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import * as Stories from "./TextArea.stories";
+
+<Meta of={Stories} />
+
+# TextArea
+
+Multi-line input for longer text entries.
+
+## Examples
+
+<Canvas>
+  <Story of={Stories.Basic} />
+</Canvas>
+
+## Guidance
+
+- Use for freeform text. Consider character counters for limits.

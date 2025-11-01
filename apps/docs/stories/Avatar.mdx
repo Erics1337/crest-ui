@@ -1,0 +1,20 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import * as Stories from "./Avatar.stories";
+
+<Meta of={Stories} />
+
+# Avatar
+
+Represents a user with image or initials fallback.
+
+## Examples
+
+<Canvas>
+  <Story of={Stories.Initials} />
+  <Story of={Stories.Image} />
+  <Story of={Stories.Sizes} />
+</Canvas>
+
+## Guidance
+
+- Provide `alt` for images. Use initials fallback for missing images.

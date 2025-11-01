@@ -70,9 +70,8 @@ Usage (Tailwind classes via preset):
 ## 🧩 Components
 The UI package provides accessible, token-aware primitives.
 
-- **Available now**: `Button`, `Input`, `Card`, `Tabs`, `Badge`, `Alert`, `Tooltip`, `Modal`, `Navbar`, `Breadcrumbs`, `Footer`
-- **Planned**: TextArea, Select, Checkbox, Switch, Avatar, Drawer
-
+- **Available now**: `Button`, `Input`, `Card`, `Tabs`, `Badge`, `Alert`, `Tooltip`, `Modal`, `Navbar`, `Breadcrumbs`, `Footer`, `TextArea`, `Select`, `Checkbox`, `Switch`, `Avatar`, `Drawer`
+- **Planned**: 
 
 
 ## 🧩 Storybook docs

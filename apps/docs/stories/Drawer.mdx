@@ -1,0 +1,18 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import * as Stories from "./Drawer.stories";
+
+<Meta of={Stories} />
+
+# Drawer
+
+Slide-in panel for supplemental content.
+
+## Examples
+
+<Canvas>
+  <Story of={Stories.Right} />
+</Canvas>
+
+## Guidance
+
+- Use for secondary tasks. Close on ESC and overlay click.
