@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { TextArea } from "@crest-ui/ui";
 
 const meta: Meta<typeof TextArea> = {
