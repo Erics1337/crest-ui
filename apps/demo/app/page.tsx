@@ -1,5 +1,6 @@
 "use client";
 import { Button, Input } from "@crest-ui/ui";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Page() {
@@ -27,6 +28,11 @@ export default function Page() {
         </div>
         <div className="rounded-xl border border-peak-950/10 p-4 shadow-low">
           <p>Hello, {name || "friend"} 👋</p>
+        </div>
+        <div>
+          <Link href="/showcase" className="inline-block">
+            <Button className="mt-2">Explore the full Showcase →</Button>
+          </Link>
         </div>
       </div>
     </main>

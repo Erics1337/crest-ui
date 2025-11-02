@@ -9,6 +9,9 @@
   "exports": {
     ".": {
       "import": "./src/index.ts"
+    },
+    "./server": {
+      "import": "./src/server.ts"
     }
   },
   "files": [
