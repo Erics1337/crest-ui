@@ -4,6 +4,7 @@ import { Switch } from "@crest-ui/ui";
 const meta: Meta<typeof Switch> = {
   title: "Forms/Switch",
   component: Switch,
+  tags: ["autodocs"],
 };
 export default meta;
 

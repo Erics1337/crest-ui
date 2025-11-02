@@ -4,6 +4,7 @@ import { Button } from "@crest-ui/ui";
 const meta: Meta<typeof Button> = {
   title: "Primitives/Button",
   component: Button,
+  tags: ["autodocs"],
   args: { children: "Button" },
 };
 

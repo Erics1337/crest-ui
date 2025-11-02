@@ -9,11 +9,14 @@ const config: StorybookConfig = {
   },
 
   stories: [
-    "../stories/**/*.mdx",
     "../stories/**/*.stories.@(js|jsx|ts|tsx)"
   ],
 
-  addons: [getAbsolutePath("@storybook/addon-links"), getAbsolutePath("@storybook/addon-a11y"), getAbsolutePath("@storybook/addon-docs")]
+  addons: [
+    getAbsolutePath("@storybook/addon-links"),
+    getAbsolutePath("@storybook/addon-a11y"),
+    getAbsolutePath("@storybook/addon-docs")
+  ]
 };
 
 export default config;

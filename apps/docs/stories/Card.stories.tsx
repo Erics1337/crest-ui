@@ -4,6 +4,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter, 
 const meta: Meta<typeof Card> = {
   title: "Surfaces/Card",
   component: Card,
+  tags: ["autodocs"],
 };
 export default meta;
 

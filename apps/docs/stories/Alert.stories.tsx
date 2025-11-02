@@ -4,6 +4,7 @@ import { Alert, AlertTitle, AlertDescription } from "@crest-ui/ui";
 const meta: Meta<typeof Alert> = {
   title: "Feedback/Alert",
   component: Alert,
+  tags: ["autodocs"],
 };
 export default meta;
 

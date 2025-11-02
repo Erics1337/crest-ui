@@ -4,6 +4,7 @@ import { Drawer, DrawerTrigger, DrawerHeader, DrawerTitle, DrawerDescription, Dr
 const meta: Meta<typeof Drawer> = {
   title: "Overlays/Drawer",
   component: Drawer,
+  tags: ["autodocs"],
 };
 export default meta;
 

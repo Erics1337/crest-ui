@@ -4,6 +4,7 @@ import { Navbar, NavbarInner, NavbarBrand, NavbarNav, NavbarItem } from "@crest-
 const meta: Meta<typeof Navbar> = {
   title: "Navigation/Navbar",
   component: Navbar,
+  tags: ["autodocs"],
 };
 export default meta;
 

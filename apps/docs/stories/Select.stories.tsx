@@ -4,6 +4,7 @@ import { Select } from "@crest-ui/ui";
 const meta: Meta<typeof Select> = {
   title: "Forms/Select",
   component: Select,
+  tags: ["autodocs"],
 };
 export default meta;
 

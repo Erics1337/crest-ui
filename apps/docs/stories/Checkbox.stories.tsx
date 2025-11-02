@@ -4,6 +4,7 @@ import { Checkbox } from "@crest-ui/ui";
 const meta: Meta<typeof Checkbox> = {
   title: "Forms/Checkbox",
   component: Checkbox,
+  tags: ["autodocs"],
 };
 export default meta;
 

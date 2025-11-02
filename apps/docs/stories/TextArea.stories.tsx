@@ -4,6 +4,7 @@ import { TextArea } from "@crest-ui/ui";
 const meta: Meta<typeof TextArea> = {
   title: "Forms/TextArea",
   component: TextArea,
+  tags: ["autodocs"],
 };
 export default meta;
 

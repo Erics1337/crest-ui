@@ -2,8 +2,9 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Avatar } from "@crest-ui/ui";
 
 const meta: Meta<typeof Avatar> = {
-  title: "Data Display/Avatar",
+  title: "Media/Avatar",
   component: Avatar,
+  tags: ["autodocs"],
 };
 export default meta;
 

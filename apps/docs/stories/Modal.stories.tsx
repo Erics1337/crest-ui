@@ -14,6 +14,7 @@ import {
 const meta: Meta<typeof Modal> = {
   title: "Overlays/Modal",
   component: Modal,
+  tags: ["autodocs"],
 };
 export default meta;
 

@@ -4,6 +4,7 @@ import { Tooltip, TooltipTrigger, TooltipContent, Button } from "@crest-ui/ui";
 const meta: Meta<typeof Tooltip> = {
   title: "Overlays/Tooltip",
   component: Tooltip,
+  tags: ["autodocs"],
 };
 export default meta;
 

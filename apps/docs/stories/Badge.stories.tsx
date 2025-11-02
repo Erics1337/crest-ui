@@ -4,6 +4,7 @@ import { Badge } from "@crest-ui/ui";
 const meta: Meta<typeof Badge> = {
   title: "Data Display/Badge",
   component: Badge,
+  tags: ["autodocs"],
 };
 export default meta;
 

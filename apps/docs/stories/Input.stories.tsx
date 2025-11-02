@@ -4,6 +4,7 @@ import { Input } from "@crest-ui/ui";
 const meta: Meta<typeof Input> = {
   title: "Primitives/Input",
   component: Input,
+  tags: ["autodocs"],
   args: { placeholder: "Enter text" },
 };
 
