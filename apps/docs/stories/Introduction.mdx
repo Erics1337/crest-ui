@@ -28,6 +28,37 @@ Install and import components from `@crest-code/crest-ui` and include token CSS 
 import { Button } from "@crest-code/crest-ui";
 ```
 
+## Setup
+
+To match the demo styling, add the Tailwind preset and include the tokens CSS:
+
+1) Install helpers
+
+```bash
+npm i @crest-code/tokens @crest-code/config
+```
+
+2) Tailwind config
+
+```js
+// tailwind.config.js
+module.exports = {
+  content: [
+    "./app/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./pages/**/*.{ts,tsx}",
+    "./node_modules/@crest-code/crest-ui/dist/**/*.{js,ts}",
+  ],
+  presets: [require("@crest-code/config/tailwind-preset")],
+};
+```
+
+3) Global CSS
+
+```css
+@import "@crest-code/tokens/css/variables.css";
+```
+
 ## Theming
 
 Add brand variants in `packages/themes` and expose overrides via CSS variables or Tailwind utilities.

@@ -55,7 +55,7 @@ import {
   DrawerFooter,
   DrawerTrigger,
   DrawerClose,
-} from "@crest-code/ui";
+} from "@crest-code/crest-ui";
 
 export default function Page() {
   const [name, setName] = useState("");
@@ -78,6 +78,58 @@ export default function Page() {
             </a>.
           </p>
         </header>
+
+        <section>
+          <Card>
+            <CardHeader>
+              <CardTitle>Install</CardTitle>
+              <CardDescription>Get started with the UI package</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <pre className="rounded-lg bg-peak-950/5 p-4 text-sm">
+                <code>npm i @crest-code/crest-ui</code>
+              </pre>
+            </CardContent>
+          </Card>
+        </section>
+
+        <section>
+          <Card>
+            <CardHeader>
+              <CardTitle>Setup</CardTitle>
+              <CardDescription>Tailwind preset and tokens CSS</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div>
+                <p className="mb-2 text-sm text-peak-950/80">1) Install styling helpers (recommended)</p>
+                <pre className="rounded-lg bg-peak-950/5 p-4 text-sm">
+                  <code>npm i @crest-code/tokens @crest-code/config</code>
+                </pre>
+              </div>
+              <div>
+                <p className="mb-2 text-sm text-peak-950/80">2) Use the Tailwind preset</p>
+                <pre className="rounded-lg bg-peak-950/5 p-4 text-sm overflow-auto">
+                  <code>{`// tailwind.config.js
+module.exports = {
+  content: [
+    "./app/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./pages/**/*.{ts,tsx}",
+    "./node_modules/@crest-code/crest-ui/dist/**/*.{js,ts}"
+  ],
+  presets: [require("@crest-code/config/tailwind-preset")],
+};`}</code>
+                </pre>
+              </div>
+              <div>
+                <p className="mb-2 text-sm text-peak-950/80">3) Import tokens CSS once</p>
+                <pre className="rounded-lg bg-peak-950/5 p-4 text-sm">
+                  <code>{`@import "@crest-code/tokens/css/variables.css";`}</code>
+                </pre>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
 
         <section className="grid gap-6 md:grid-cols-2">
           <Card>
