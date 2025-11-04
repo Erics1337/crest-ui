@@ -1,5 +1,5 @@
 # 🏔️ Crest UI — Design System
-
+![Crest UI — Design System & UI Framework](.github/assets/crest-ui-banner.png)
 A design-forward, component-driven UI system that blends modern SaaS clarity with the textures and palette of the high desert and mountains. Built for speed, polish, and multi-brand extensibility across Crest Code Creative projects.
 
 - **Framework**: React + Next.js

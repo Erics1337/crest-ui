@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
+import Image from "next/image";
 import { Navbar, NavbarInner, NavbarBrand, NavbarNav, NavbarItem, Footer, FooterInner, FooterNote } from "@crest-ui/ui/server";
 
 export const metadata: Metadata = {
@@ -15,7 +16,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar elevated>
           <NavbarInner>
             <NavbarBrand>
-              <Link href="/" className="hover:opacity-80">Crest</Link>
+              <Link href="/" className="flex items-center gap-2 hover:opacity-80">
+                <Image src="/crest-logo.png" alt="Crest Code Creative logo" width={28} height={28} priority />
+                <span>Crest</span>
+              </Link>
             </NavbarBrand>
             <NavbarNav>
               <NavbarItem>
