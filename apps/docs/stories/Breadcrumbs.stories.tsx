@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Breadcrumbs, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator } from "@crest-ui/ui";
+import { Breadcrumbs, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator } from "@crest-code/ui";
 
 const meta: Meta<typeof Breadcrumbs> = {
   title: "Navigation/Breadcrumbs",

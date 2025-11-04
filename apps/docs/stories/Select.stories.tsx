@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Select } from "@crest-ui/ui";
+import { Select } from "@crest-code/ui";
 
 const meta: Meta<typeof Select> = {
   title: "Forms/Select",

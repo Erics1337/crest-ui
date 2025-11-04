@@ -55,7 +55,7 @@ import {
   DrawerFooter,
   DrawerTrigger,
   DrawerClose,
-} from "@crest-ui/ui";
+} from "@crest-code/ui";
 
 export default function Page() {
   const [name, setName] = useState("");

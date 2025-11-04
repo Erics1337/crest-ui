@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Input } from "@crest-ui/ui";
+import { Input } from "@crest-code/ui";
 
 const meta: Meta<typeof Input> = {
   title: "Primitives/Input",

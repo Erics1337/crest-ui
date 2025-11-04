@@ -11,8 +11,8 @@
     "build": "turbo run build",
     "lint": "turbo run lint --continue",
     "format": "prettier --write .",
-    "docs": "turbo run dev --filter=@crest-ui/docs",
-    "build:docs": "turbo run build --filter=@crest-ui/docs",
+    "docs": "turbo run dev --filter=@crest-code/docs",
+    "build:docs": "turbo run build --filter=@crest-code/docs",
     "test": "turbo run test",
     "test:watch": "turbo run test:watch --parallel",
     "coverage": "turbo run coverage"

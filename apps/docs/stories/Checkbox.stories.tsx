@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Checkbox } from "@crest-ui/ui";
+import { Checkbox } from "@crest-code/ui";
 
 const meta: Meta<typeof Checkbox> = {
   title: "Forms/Checkbox",

@@ -1,5 +1,5 @@
 {
-  "name": "@crest-ui/demo",
+  "name": "@crest-code/demo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,14 +10,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@crest-ui/tokens": "file:../../packages/tokens",
-    "@crest-ui/ui": "file:../../packages/ui",
+    "@crest-code/tokens": "file:../../packages/tokens",
+    "@crest-code/crest-ui": "file:../../packages/ui",
     "next": "^14.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@crest-ui/config": "file:../../packages/config",
+    "@crest-code/config": "file:../../packages/config",
     "@types/node": "^20.10.6",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.21",

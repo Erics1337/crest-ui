@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { TextArea } from "@crest-ui/ui";
+import { TextArea } from "@crest-code/ui";
 
 const meta: Meta<typeof TextArea> = {
   title: "Forms/TextArea",

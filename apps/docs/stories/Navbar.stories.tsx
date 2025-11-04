@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Navbar, NavbarInner, NavbarBrand, NavbarNav, NavbarItem } from "@crest-ui/ui";
+import { Navbar, NavbarInner, NavbarBrand, NavbarNav, NavbarItem } from "@crest-code/ui";
 
 const meta: Meta<typeof Navbar> = {
   title: "Navigation/Navbar",

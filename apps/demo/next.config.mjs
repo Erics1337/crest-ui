@@ -2,7 +2,7 @@
 const isGhPages = process.env.GITHUB_PAGES === 'true';
 
 const nextConfig = {
-  transpilePackages: ["@crest-ui/ui", "@crest-ui/config", "@crest-ui/tokens"],
+  transpilePackages: ["@crest-code/crest-ui", "@crest-code/config", "@crest-code/tokens"],
   output: 'export',
   trailingSlash: true,
   images: {

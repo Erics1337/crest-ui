@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Drawer, DrawerTrigger, DrawerHeader, DrawerTitle, DrawerDescription, DrawerBody, DrawerFooter, DrawerClose, Button } from "@crest-ui/ui";
+import { Drawer, DrawerTrigger, DrawerHeader, DrawerTitle, DrawerDescription, DrawerBody, DrawerFooter, DrawerClose, Button } from "@crest-code/ui";
 
 const meta: Meta<typeof Drawer> = {
   title: "Overlays/Drawer",

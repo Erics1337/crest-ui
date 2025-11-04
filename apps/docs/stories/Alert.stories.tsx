@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Alert, AlertTitle, AlertDescription } from "@crest-ui/ui";
+import { Alert, AlertTitle, AlertDescription } from "@crest-code/ui";
 
 const meta: Meta<typeof Alert> = {
   title: "Feedback/Alert",

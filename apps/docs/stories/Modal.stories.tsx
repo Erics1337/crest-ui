@@ -9,7 +9,7 @@ import {
   ModalFooter,
   ModalClose,
   Button,
-} from "@crest-ui/ui";
+} from "@crest-code/ui";
 
 const meta: Meta<typeof Modal> = {
   title: "Overlays/Modal",

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Tooltip, TooltipTrigger, TooltipContent, Button } from "@crest-ui/ui";
+import { Tooltip, TooltipTrigger, TooltipContent, Button } from "@crest-code/ui";
 
 const meta: Meta<typeof Tooltip> = {
   title: "Overlays/Tooltip",

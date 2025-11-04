@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Avatar } from "@crest-ui/ui";
+import { Avatar } from "@crest-code/ui";
 
 const meta: Meta<typeof Avatar> = {
   title: "Media/Avatar",

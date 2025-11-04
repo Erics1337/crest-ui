@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Badge } from "@crest-ui/ui";
+import { Badge } from "@crest-code/ui";
 
 const meta: Meta<typeof Badge> = {
   title: "Data Display/Badge",

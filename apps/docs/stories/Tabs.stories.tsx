@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@crest-ui/ui";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@crest-code/ui";
 
 const meta: Meta<typeof Tabs> = {
   title: "Navigation/Tabs",

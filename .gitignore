@@ -11,3 +11,7 @@ yarn.lock
 .env.local
 storybook-static
 .specstory/**
+dist
+coverage
+*.log
+out

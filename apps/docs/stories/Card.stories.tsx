@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter, Button } from "@crest-ui/ui";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter, Button } from "@crest-code/ui";
 
 const meta: Meta<typeof Card> = {
   title: "Surfaces/Card",

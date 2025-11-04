@@ -1,4 +1,4 @@
-@import "@crest-ui/tokens/css/variables.css";
+@import "@crest-code/tokens/css/variables.css";
 
 @tailwind base;
 @tailwind components;

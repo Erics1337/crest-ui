@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Switch } from "@crest-ui/ui";
+import { Switch } from "@crest-code/ui";
 
 const meta: Meta<typeof Switch> = {
   title: "Forms/Switch",

@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import preset from "@crest-ui/config/tailwind-preset";
+import preset from "@crest-code/config/tailwind-preset";
 
 export default {
   presets: [preset],
