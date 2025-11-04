@@ -1,15 +1,21 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
-import Image from "next/image";
 import { Navbar, NavbarInner, NavbarBrand, NavbarNav, NavbarItem, Footer, FooterInner, FooterNote } from "@crest-ui/ui/server";
 
 export const metadata: Metadata = {
   title: "Crest UI Demo",
   description: "Demo app for Crest UI design system",
+  icons: {
+    icon: "/crest-logo.png",
+    shortcut: "/crest-logo.png",
+    apple: "/crest-logo.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+  const logoSrc = `${basePath}/crest-logo.png`;
   return (
     <html lang="en">
       <body>
@@ -17,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <NavbarInner>
             <NavbarBrand>
               <Link href="/" className="flex items-center gap-2 hover:opacity-80">
-                <Image src="/crest-logo.png" alt="Crest Code Creative logo" width={28} height={28} priority />
+                <img src={logoSrc} alt="Crest Code Creative logo" width={28} height={28} />
                 <span>Crest</span>
               </Link>
             </NavbarBrand>
