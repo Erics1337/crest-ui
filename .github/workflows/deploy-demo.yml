@@ -21,24 +21,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
 
-      - name: Install dependencies (use lockfile if present)
-        run: |
-          if [ -f package-lock.json ]; then
-            echo "Using npm ci with package-lock.json";
-            npm ci;
-          else
-            echo "No package-lock.json found. Falling back to npm install";
-            npm install;
-          fi
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile || pnpm install
 
       - name: Build demo for GitHub Pages
-        run: npm run build:gh --workspace=@crest-ui/demo
+        run: pnpm --filter @crest-ui/demo run build:gh
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
