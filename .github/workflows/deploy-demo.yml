@@ -35,7 +35,7 @@ jobs:
         run: pnpm install --frozen-lockfile || pnpm install
 
       - name: Build demo for GitHub Pages
-        run: pnpm --filter @crest-ui/demo run build:gh
+        run: pnpm --filter @crest-code/demo run build:gh
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
