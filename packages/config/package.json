@@ -1,7 +1,7 @@
 {
   "name": "@crest-ui/config",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "type": "module",
   "main": "tailwind-preset.js",
   "types": "index.d.ts",
@@ -12,5 +12,11 @@
     },
     "./tsconfig": "./tsconfig.base.json"
   },
-  "files": ["tailwind-preset.js", "tailwind-preset.d.ts", "tsconfig.base.json", "index.d.ts"]
+  "files": ["tailwind-preset.js", "tailwind-preset.d.ts", "tsconfig.base.json", "index.d.ts"],
+  "scripts": {
+    "prepublishOnly": "echo 'config ready'"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

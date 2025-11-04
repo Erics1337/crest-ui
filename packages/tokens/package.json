@@ -1,7 +1,7 @@
 {
   "name": "@crest-ui/tokens",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "type": "module",
   "files": ["css", "tokens.json"],
   "exports": {
@@ -9,6 +9,10 @@
     "./tokens.json": "./tokens.json"
   },
   "scripts": {
-    "build": "echo 'tokens ready'"
+    "build": "echo 'tokens ready'",
+    "prepublishOnly": "pnpm build"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
