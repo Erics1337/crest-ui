@@ -5,6 +5,9 @@ const nextConfig = {
   transpilePackages: ["@crest-ui/ui", "@crest-ui/config", "@crest-ui/tokens"],
   output: 'export',
   trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
   ...(isGhPages
     ? {
         basePath: '/crest-ui',
