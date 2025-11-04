@@ -23,13 +23,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <NavbarInner>
             <NavbarBrand>
               <Link href="/" className="flex items-center gap-2 hover:opacity-80">
-                <img src={logoSrc} alt="Crest Code Creative logo" width={28} height={28} />
-                <span>Crest</span>
+                <img src={logoSrc} alt="Crest Code logo" width={28} height={28} />
+                <span>Crest UI</span>
               </Link>
             </NavbarBrand>
             <NavbarNav>
               <NavbarItem>
-                <Link href="/showcase" className="hover:underline">Showcase</Link>
+                <Link href="/" className="hover:underline">Home</Link>
               </NavbarItem>
             </NavbarNav>
           </NavbarInner>
@@ -38,7 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer>
           <FooterInner />
           <div className="mx-auto max-w-6xl px-4 pb-8">
-            <FooterNote>© {new Date().getFullYear()} Crest Code Creative</FooterNote>
+            <FooterNote>© {new Date().getFullYear()} Crest Code</FooterNote>
           </div>
         </Footer>
       </body>

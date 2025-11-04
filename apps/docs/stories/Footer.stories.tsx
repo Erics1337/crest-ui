@@ -26,7 +26,7 @@ export const Basic: Story = {
         </FooterCol>
       </FooterInner>
       <div className="mx-auto max-w-6xl px-4 pb-6">
-        <FooterNote>© {new Date().getFullYear()} Crest Code Creative</FooterNote>
+        <FooterNote>© {new Date().getFullYear()} Crest Code</FooterNote>
       </div>
     </Footer>
   ),
